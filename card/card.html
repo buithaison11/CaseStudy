@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý linh kiện PC</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        table {
+            width: 100%;
+        }
+
+        tr {
+            height: 50px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgb(200, 200, 200);
+        }
+
+        td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            width: 70px;
+            height: 30px;
+            border: none;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        #banner {
+            padding: 4px;
+            margin: 0;
+            background-color: green;
+            text-align: center;
+            color: white;
+        }   
+    </style>
+</head>
+
+<body>
+    <div id="banner">
+        <h1>QUẢN LÝ BÁN LINH KIỆN MÁY TÍNH</h1>
+    </div>
+    <div>
+        <h2>Thêm sản phẩm card màn hình</h2>
+    </div>
+    <div style="width: 100%;  background-color: rgb(252, 246, 246);">
+        <input style="width: 200px; height: 30px;" type="text" id="productNameCard" placeholder="Tên sản phẩm">
+        <input style="width: 200px; height: 30px;" type="text" id="productImageCard" placeholder="Link ảnh">
+        <input style="width: 200px; height: 30px;" type="text" id="productBrandCard" placeholder="Hãng sản xuất">
+        <input style="width: 200px; height: 30px;" type="number" id="productPriceCard" placeholder="Giá thành">
+        <input style="width: 300px; height: 30px;" type="text" id="productDescriptionCard" placeholder="Mô tả sản phẩm">
+        <button id="add">ADD</button>
+    </div> <br> <br>
+
+    <input style=" width: 300px; height: 30px;" type="text" id="productCardSearch" placeholder="Tìm kiếm sản phẩm">
+    <button id="search">Search</button>
+    <br> <br>
+
+    <div id="result"></div>
+
+    <script src="card.js"></script>
+    <br> <br>
+    <div>
+        <button style="align-items: center; width: 200px; height: 42px; ">
+            <a style=" color: white; text-decoration: none; text-align: center; " href="/index.html">Trang chủ</a>
+        </button>
+    </div>
+</body>
+
+</html>
